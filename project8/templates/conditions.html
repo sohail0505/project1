@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        {% if age > 18  %}
+            <h1>{{age}} is not elgible for voting</h1>
+            {% endif %}
+        {% if age < 30  %}
+            <h1>{{name}} is not eligible</h1>
+        {% else %}
+        <h1>{{gender}} is available for voting</h1>
+        {% endif %}
+        {% if ahamed > 50 %}
+        <h1> {{name}} small for ahamed</h1>
+        {% elif fazal < 22 %}
+        <h1> {{name}} big for fazal</h1>
+        {%else%}
+        <h1>{{gender}} is the fazal</h1>
+        {% endif %}
+        {% if ahamed > 50 %}
+        {% if age > 18  %}
+        <h1> {{name}} small for ahamed</h1>
+        {%else%}
+        <h1>{{gender}} is the fazal</h1>
+        {% endif %}
+        {%else%}
+        {% if pushpa  > 100 %}
+        <h1>{{age}} is age of pushparaj</h1>
+        {%else%}
+        <h1>{{name}} is the not pushparaj</h1>
+        {% endif %}
+        {% endif %}
+
+
+
+      
+    </center>
+
+</body>
+</html>
